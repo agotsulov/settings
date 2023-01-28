@@ -11,12 +11,14 @@ yes | yay -S community/mc --noconfirm
 yes | yay -S aur/gnome-browser-connector --noconfirm
 yes | yay -S aur/yaru-icon-theme --noconfirm
 yes | yay -S aur/yaru-gtk-theme --noconfirm
-yes | yay -S aur/gnome-terminal-transparency --noconfirm
+yes | yay -S aur/gnome-terminal-transparency
 
 yes | yay -S community/ttf-jetbrains-mono  --noconfirm
 yes | yay -S community/ttf-ubuntu-font-family  --noconfirm
 yes | yay -S extra/noto-fonts-emoji --noconfirm
 yes | yay -S extra/noto-fonts-extra --noconfirm
+yes | yay -S aur/ttf-ms-fonts --noconfirm
+
 
 yes | yay -S aur/update-grub --noconfirm
 yes | yay -S community/grub-customizer --noconfirm
@@ -24,6 +26,8 @@ yes | yay -S community/grub-customizer --noconfirm
 
 yes | yay -S community/micro --noconfirm
 yes | yay -S aur/visual-studio-code-bin --noconfirm
+
+yes | yay -S community/dbeaver --noconfirm
 
 yes | yay -S community/docker --noconfirm
 yes | yay -S community/docker-compose --noconfirm
@@ -44,14 +48,16 @@ yes | yay -S aur/gdevelop-bin --noconfirm
 # yes | yay -S community/mono-msbuild --noconfirm
 # yes | yay -S community/mono-msbuild-sdkresolver --noconfirm
 
-
 yes | yay -S extra/gimp --noconfirm
 yes | yay -S community/pinta --noconfirm
 # yes | yay -S extra/krita --noconfirm
 
 
-yes | yay -S community/telegram-desktop --noconfirm
-yes | yay -S aur/discord_arch_electron --noconfirm
+# yes | yay -S community/telegram-desktop --noconfirm
+# yes | yay -S aur/discord_arch_electron --noconfirm
+# yes | yay -S community/mattermost-desktop --noconfirm
+
+yes | yay -S aur/tor-browser --noconfirm
 
 yes | yay -S extra/ffmpeg --noconfirm
 yes | yay -S community/mpv --noconfirm
@@ -65,7 +71,8 @@ yes | yay -S multilib/steam-native-runtime --noconfirm
 # yes | yay -S aur/multimc5 --noconfirm
 yes | yay -S community/crawl-tiles --noconfirm
 
-yes | yay -S community/youtube-dl --noconfirm
+# yes | yay -S community/youtube-dl --noconfirm
+# yes | yay -S rpi-imager --noconfirm
 
 
 # yes | yay -S endeavouros/nvidia-inst --noconfirm
@@ -86,6 +93,7 @@ cd WhiteSur-gtk-theme
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 cd $HOME
+echo ""
 echo "sudo /etc/default/grub  uncomment GRUB_DISABLE_OS_PROBER=false"
 echo "Terminal background color #300A24"
 echo "sudo nano /etc/pacman.conf"
