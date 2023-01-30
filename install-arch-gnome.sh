@@ -37,6 +37,10 @@ yes | yay -S extra/jdk-openjdk --noconfirm
 yes | yay -S community/go --noconfirm
 # yes | yay -S core/python --noconfirm
 
+yes | yay -S community/networkmanager-l2tp --noconfirm
+yes | yay -S community/strongswan --noconfirm
+yes | yay -S community/networkmanager-strongswan --noconfirm
+
 
 yes | yay -S community/godot  --noconfirm
 yes | yay -S aur/gdevelop-bin --noconfirm
@@ -96,6 +100,7 @@ cd $HOME
 echo ""
 echo "sudo /etc/default/grub  uncomment GRUB_DISABLE_OS_PROBER=false"
 echo "Terminal background color #300A24"
+echo "fix settings applications extra/malcontent"
 echo "sudo nano /etc/pacman.conf"
 echo "https://extensions.gnome.org/extension/779/clipboard-indicator/"
 echo "https://extensions.gnome.org/extension/3193/blur-my-shell/"
