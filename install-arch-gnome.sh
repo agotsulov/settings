@@ -44,6 +44,7 @@ yes | yay -S community/networkmanager-strongswan --noconfirm
 
 yes | yay -S community/godot  --noconfirm
 yes | yay -S aur/gdevelop-bin --noconfirm
+yes | yay -S aur/tic-80-git   --noconfirm
 # yes | yay -S community/blender --noconfirm
 # yes | yay -S aur/unityhub --noconfirm
 # yes | yay -S community/dotnet-sdk --noconfirm
@@ -88,10 +89,18 @@ cd $HOME
 mkdir bin
 mkdir Work
 
+
 cd bin 
-git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git
-cd WhiteSur-gtk-theme
-./install.sh -l -c Light -t orange -HD
+git clone https://github.com/vinceliuice/orchis-theme
+cd orchis-theme 
+./install.sh -l -c light -t orange
+
+
+# cd bin 
+# git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git
+# cd WhiteSur-gtk-theme
+# ./install.sh -l -c Light -t orange -HD
+
 
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
